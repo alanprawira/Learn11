@@ -1,3 +1,5 @@
+header {text-align: justify;}
+
 .link {text-decoration: none;}
   
 .list {list-style-type: none;}
@@ -24,4 +26,7 @@ input[type=text]:focus {width: 250px;}
 input:focus {background-color: green;}
 
 .sec-1 li:hover {background-color: yellow;transition: 700ms;}
+
+.sec-1 {background-color: #B9BBC2;}
+.sec-1 :first-child button {background-color: #7733FF;}
 
