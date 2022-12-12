@@ -1,0 +1,27 @@
+.link {text-decoration: none;}
+  
+.list {list-style-type: none;}
+
+p,h1,h2,h3,h4,h5,h6 {margin: 0;}
+
+ul {margin: 0;padding-left: 10;}
+
+button {cursor: pointer;}
+
+address {font-style: normal;}
+
+img {display: block;}
+  body { font-family: Plus Jakarta Sans, sans-serif;}
+
+.sec-1:focus {background-color: green;}
+
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;}
+
+input[type=text]:focus {width: 250px;}
+input:focus {background-color: green;}
+
+.sec-1 li:hover {background-color: yellow;transition: 700ms;}
+
