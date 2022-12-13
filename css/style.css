@@ -66,16 +66,15 @@ img {
   --logo-color: rgba(0, 0, 0, 0.92);
   --link-color: #3378ff;
   --bg-hover: #f6f1ff;
+  --after-bg: #c0c0c0;
 }
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- header --------------------------------- */
-.header {
-}
 .header .container {
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
 }
 .header-logo {
@@ -120,7 +119,6 @@ img {
   margin-top: auto;
   margin-bottom: auto;
   right: -15px;
-  display: block;
 }
 .header-link:hover .header-item::after,
 .header-link:focus .header-item::after {
@@ -136,6 +134,9 @@ img {
   color: var(--accent-color);
   position: relative;
   transition: all 400ms linear;
+  display: block;
+  padding: 10px 25px;
+  min-width: 96px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -174,7 +175,7 @@ img {
   position: absolute;
   width: 12px;
   height: 1px;
-  background-color: #c0c0c0;
+  background-color: var(--after-bg);
   transform: rotate(90deg);
   top: 0;
   bottom: 0;
@@ -237,4 +238,7 @@ img {
   color: var(--accent-color);
   padding: 12px 0;
 }
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- Your sec -------------------------------- */
+/* code here */
 /* -------------------------------------------------------------------------- */
