@@ -63,11 +63,125 @@ img {
   --title-color: rgba(0, 0, 0, 0.72);
   --btn-color: rgba(255, 255, 255, 0.92);
   --bg-color: rgba(214, 205, 205, 0.562);
+  --logo-color: rgba(0, 0, 0, 0.92);
+  --link-color: #3378ff;
+  --bg-hover: #f6f1ff;
 }
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- header --------------------------------- */
-/* code here */
+.header {
+}
+.header .container {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.header-logo {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--logo-color);
+  margin-right: 45px;
+}
+.header-logo span {
+  color: var(--accent-color);
+}
+.header-dev-list {
+  display: flex;
+  gap: 24px;
+  margin-right: 124px;
+  align-items: center;
+}
+.header-dev-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--link-color);
+}
+.header-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header-item {
+  position: relative;
+}
+.header-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: var(--accent-color);
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: -15px;
+  display: block;
+}
+.header-link:hover .header-item::after,
+.header-link:focus .header-item::after {
+  display: none;
+}
+.header-item:last-of-type::after {
+  display: none;
+}
+.header-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--accent-color);
+  position: relative;
+  transition: all 400ms linear;
+}
+.header-link:hover,
+.header-link:focus {
+  padding: 10px 25px;
+  min-width: 96px;
+  display: block;
+  background: var(--bg-hover);
+  border-radius: 32px;
+}
+.header-link:hover::after,
+.header-link:focus::after {
+  content: url("../img/header-link-hover.png");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 0px;
+}
+
+.icons-wrap {
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+  align-items: center;
+}
+.soc-list {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+.soc-list::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #c0c0c0;
+  transform: rotate(90deg);
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: -22px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* ---------------------------------- hero ---------------------------------- */

@@ -24,19 +24,58 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <a>KATE<span>dev</span></a>
-
-      <ul>
-        <li><a class="bar1" href="">Blog</a></li>
-        <li><a class="bar1" href="">Faq</a></li>
-      </ul>
-      <ul>
-        <li><a class="bar2" href="">Work</a></li>
-        <li><a class="bar2" href="">Services</a></li>
-        <li><a class="bar2" href="">About</a></li>
-        <li><a class="bar2" href="">Contact</a></li>
-      </ul>
+    <!-- ------------------------------- header -------------------------------- -->
+    <header class="header">
+      <div class="container">
+        <a class="header-logo link">enji<span>dev</span></a>
+        <ul class="header-dev-list list">
+          <li class="header-dev-item">
+            <a class="header-dev-link link" href="">Blog</a>
+          </li>
+          <li class="header-dev-item">
+            <a class="header-dev-link link" href="">FAQ</a>
+          </li>
+        </ul>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="">Work</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Services</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icons-wrap">
+          <ul class="soc-list list">
+            <li class="soc-item">
+              <a href="" class="soc-link link">
+                <svg class="soc-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-item">
+              <a href="" class="soc-link link">
+                <svg class="soc-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="" class="theme-switch link">
+            <svg class="theme-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-sun"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </header>
     <main>
       <!-- -------------------------------- hero --------------------------------- -->
