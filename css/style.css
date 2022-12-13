@@ -43,7 +43,7 @@ img {
 .container {
   width: 1260px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 60px;
 }
 
 .visually-hidden {
@@ -204,7 +204,7 @@ img {
   margin-bottom: 24px;
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 66px;
+  font-size: 56px;
   line-height: 1.5;
   color: var(--title-color);
   max-width: 620px;
@@ -214,7 +214,7 @@ img {
 }
 .hero-desk {
   margin-bottom: 34px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.25;
   font-weight: 400;
   color: var(--title-color);
@@ -237,6 +237,28 @@ img {
   background-color: transparent;
   color: var(--accent-color);
   padding: 12px 0;
+}
+.twi {
+  transition: fill 300ms linear;
+}
+.twi:hover,
+.twi:focus {
+  fill: var(--link-color);
+}
+.git {
+  transition: fill 300ms linear;
+}
+.git:hover,
+.git:focus {
+  fill: var(--title-color);
+}
+.theme-icon {
+  transition: fill 300ms linear;
+  fill: rgb(216, 216, 108);
+}
+.theme-icon:hover,
+.theme-icon:focus {
+  fill: var(--logo-color);
 }
 /* -------------------------------------------------------------------------- */
 /* -------------------------------- Your sec -------------------------------- */
