@@ -1,61 +1,126 @@
-@media screen and (min-width: 360px;) {.about .multiple-item } {width: 280px;}
-@media screen and (min-width: 390px;) {.about .multiple-item } {width: 300px;}
-@media screen and (min-width: 430px;) {.about .multiple-item } {width: 310px;}
-@media screen and (min-width: 480px;) {.about .multiple-item } {width: 355px;}
-@media screen and (min-width: 768px;) {.about .multiple-item } {width: 600px;}
-
-body {max-width: 1200px;}
-
-body {font-family: font-family: 'Plus Jakarta Sans', sans-serif;}
-span {color:#7733FF ;}
-.bar1 {color:#3378FF;}
-.bar2 {color: #7733FF;}
-
-header {font-family: 'Poppins';}
-
-
-.link {text-decoration: none;}
-
-p,h1,h2,h3,h4,h5,h6 {margin: 0;}
-
-ul {margin: 0;padding-left: 10;}
-
-
-button {cursor: pointer;}
-
-address {font-style: normal;}
-
-img {display: block;}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  background-color: #B9BBC2;
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.flex> div {
-  background-color: #B9BBC2;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  background-color: #7733FF; color: white;}
+.link {
+  text-decoration: none;
+}
 
-.bt1 {background-color: #7733FF; color: white;}
-.sec-1 div {font-family: 'Poppins', sans-serif;}
-.sec-1 {background-color: #B9BBC2;}
-.sec-1 button:focus {background-color: green;}
+.list {
+  list-style-type: none;
+}
 
-img {float: right;}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 
-h3 {font-weight: 400;}
-.sec-2 a {color: black;}
+button {
+  cursor: pointer;
+}
 
-.sec-2 li :hover {background-color: aqua;transition: 700ms;}
+address {
+  font-style: normal;
+}
 
-  .sec-2 {margin-top: 480px;}
-  .sec-2 span {font-weight: 700;color: black;}
+img {
+  display: block;
+}
 
+.btn {
+  border: transparent;
+}
+.container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+:root {
+  --accent-color: #7733ff;
+  --title-color: rgba(0, 0, 0, 0.72);
+  --btn-color: rgba(255, 255, 255, 0.92);
+  --bg-color: rgba(214, 205, 205, 0.562);
+}
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- header --------------------------------- */
+/* code here */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- hero ---------------------------------- */
+.hero {
+  background-color: var(--bg-color);
+}
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+.hero-wrap {
+  margin-right: 120px;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-title {
+  margin-bottom: 24px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 66px;
+  line-height: 1.5;
+  color: var(--title-color);
+  max-width: 620px;
+}
+.hero-title span {
+  color: var(--accent-color);
+}
+.hero-desk {
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--title-color);
+}
+.hero-list {
+  display: flex;
+  gap: 20px;
+}
+.hero-btn {
+  padding: 12px 47px;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--btn-color);
+  text-transform: uppercase;
+}
+.transparent-btn {
+  background-color: transparent;
+  color: var(--accent-color);
+  padding: 12px 0;
+}
+/* -------------------------------------------------------------------------- */
