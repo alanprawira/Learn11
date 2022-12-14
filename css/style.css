@@ -346,7 +346,8 @@ img {
   gap: 100px;
   display: block;
   gap: 100px;
-margin-top: -17px;}
+  margin-top: -17px;
+}
 
 .skills-desk {
   margin-top: 15px;
@@ -357,3 +358,20 @@ margin-top: -17px;}
   color: var(--title-color);
   max-width: 620px;
 }
+
+/* ----------------------------------- gap ---------------------------------- */
+
+.beauty-title {
+
+}
+
+.beauty-main {margin-right: 120px;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;}
+
+.beauty-icon {
+ width: 10px;height: 10px;
+ display: flex;
+ flex-direction: row;gap: 10px;
+align-items: center;}
