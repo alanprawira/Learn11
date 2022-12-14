@@ -476,7 +476,7 @@ img {
   flex-direction: column;
   padding: 32px;
   background: #FFFFFF;
-  border: 1px solid #d8d2d2;
+  border: 1px solid #b9b0b0;
   border-radius: 16px;
   width: 482px;
   height: 126px;
@@ -498,16 +498,69 @@ img {
   margin-top: 7.93px;
   margin-bottom: 10px;
   position: relative;
+
 }
 
 /* ---------------------------------- sec4 ---------------------------------- */
 .sec-4 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -566px;
 }
+
 .det-title {
+  margin-left: -340px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #FF7DAC;
+  font-weight: 700;
 }
+
 .det-main {
+  margin-left: 190px;
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 800;
 }
+
 .det-desk {
+  margin-left: 43px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 16px;
 }
+
 .det-extra {
+  display: flex;
+  flex-direction: row;
+  color: #7733ff;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 16px;
+  font-weight: 700;
 }
+
+.det-extra-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: -190px;
+}
+
+/* --------------------------------- footer --------------------------------- */
+.footer {  margin-top: 543px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot-list {display: flex;flex-direction: row;
+  margin-left: 10px;margin-top: 10px;gap: 36px;}
+
+.foot-main {font-size: 14px;font-weight: 700;}
+
+.foot-credit {display: flex;flex-direction: column;
+align-items: center;}
+
+.foot-credit-main {margin-top: 10px; font-size: 12px;font-weight: 400;}
