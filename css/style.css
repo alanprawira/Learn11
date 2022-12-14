@@ -224,7 +224,7 @@ img {
   margin-bottom: 24px;
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 56px;
+  font-size: 43px;
   line-height: 1.5;
   color: var(--title-color);
   max-width: 620px;
@@ -296,17 +296,13 @@ img {
 /* -------------------------------- Your sec -------------------------------- */
 /* code here */
 /* -------------------------------------------------------------------------- */
-.sec-2 .container {
-}
-
-.skills-title {
-}
 .skills-list {
   display: flex;
   gap: 35px;
   position: absolute;
-  bottom: -220%;
+  margin-top: -253px;
 }
+
 .skills-main {
   height: 200px;
   padding: 32px;
@@ -315,6 +311,7 @@ img {
   border-radius: 16px;
   width: 360px;
 }
+
 .skills-svg-link {
   display: block;
   border-radius: 50%;
@@ -327,21 +324,27 @@ img {
   background-color: #a199ff;
   margin-bottom: 17px;
 }
+
 .heart-link {
   background-color: #ff7dac;
 }
+
 .thunder-link {
   background-color: #bff4ff;
 }
+
 .skills-icon {
   fill: #ffffff;
 }
+
 .star {
   fill: #ffff00;
 }
+
 .thunder {
   fill: #5096ff;
 }
+
 .skills-link {
   margin-bottom: 5px;
   font-size: 18px;
@@ -357,6 +360,7 @@ img {
   color: rgba(0, 0, 0, 0.82);
 }
 
+/* --------------------------------- beauty --------------------------------- */
 .beauty-wrap {
   margin-top: 200px;
   margin-bottom: 200px;
@@ -364,6 +368,7 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
 .beauty {
   font-style: italic;
   font-weight: 400;
@@ -371,21 +376,26 @@ img {
   line-height: 60px;
   color: rgba(95, 93, 93, 0.683);
 }
+
 .beauty span {
   font-weight: 800;
 }
+
 .beauty-1 {
   position: relative;
 }
+
 .beauty-1::before {
   content: url("../img/beauty.png");
   position: absolute;
   left: -146px;
 }
+
 .beauty-2 {
   position: relative;
   padding-left: 340px;
 }
+
 .beauty-2::before {
   content: "";
   position: absolute;
@@ -398,6 +408,7 @@ img {
   margin-bottom: auto;
   left: 230px;
 }
+
 .beauty-2::after {
   content: "";
   position: absolute;
@@ -409,4 +420,83 @@ img {
   margin-bottom: auto;
   background-color: rgba(95, 93, 93, 0.683);
   right: -60px;
+}
+
+/* -------------------------------- section3 -------------------------------- */
+/* ---------------------------------- clean --------------------------------- */
+
+
+.clean-title {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.clean-hero {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7733ff;
+  margin-left: -883px;
+}
+
+
+
+.clean-main {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-top: 12px;
+  margin-left: -535px;
+}
+
+.clean-desk {
+  font-weight: 400;
+  font-size: 16x;
+  line-height: 1.5;
+  margin-top: 16px;
+  margin-left: -610px;
+}
+
+/* ---------------------------------- sec3 ---------------------------------- */
+/* --------------------------------- quality -------------------------------- */
+.quality-title {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -566px;
+}
+
+.quality-main {
+  display: flex;
+  gap: 35;
+  flex-direction: column;
+  padding: 32px;
+  background: #FFFFFF;
+  border: 1px solid #d8d2d2;
+  border-radius: 16px;
+  width: 482px;
+  height: 126px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.quality-high {
+  font-size: 16px;
+  line-height: height 1.25;
+  font-weight: 700;
+  color: #7733ff;
+  ;
+}
+
+.quality-desk {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 7.93px;
+  margin-bottom: 10px;
+  position: relative;
+
 }
