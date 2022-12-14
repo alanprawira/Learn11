@@ -40,6 +40,7 @@ img {
 .btn {
   border: transparent;
 }
+
 .container {
   width: 1260px;
   margin: 0 auto;
@@ -58,6 +59,7 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 :root {
   --accent-color: #7733ff;
   --title-color: rgba(0, 0, 0, 0.72);
@@ -68,6 +70,7 @@ img {
   --bg-hover: #f6f1ff;
   --after-bg: #c0c0c0;
 }
+
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- header --------------------------------- */
@@ -77,6 +80,7 @@ img {
   padding-bottom: 30px;
   align-items: center;
 }
+
 .header-logo {
   font-weight: 800;
   font-size: 24px;
@@ -84,21 +88,25 @@ img {
   color: var(--logo-color);
   margin-right: 45px;
 }
+
 .header-logo span {
   color: var(--accent-color);
 }
+
 .header-dev-list {
   display: flex;
   gap: 24px;
   margin-right: 124px;
   align-items: center;
 }
+
 .header-dev-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   color: var(--link-color);
 }
+
 .header-list {
   display: flex;
   gap: 30px;
@@ -108,6 +116,7 @@ img {
 .header-item {
   position: relative;
 }
+
 .header-item::after {
   content: "";
   position: absolute;
@@ -120,13 +129,16 @@ img {
   margin-bottom: auto;
   right: -15px;
 }
+
 .header-link:hover .header-item::after,
 .header-link:focus .header-item::after {
   display: none;
 }
+
 .header-item:last-of-type::after {
   display: none;
 }
+
 .header-link {
   font-weight: 600;
   font-size: 14px;
@@ -138,6 +150,7 @@ img {
   padding: 10px 25px;
   min-width: 96px;
 }
+
 .header-link:hover,
 .header-link:focus {
   padding: 10px 25px;
@@ -146,6 +159,7 @@ img {
   background: var(--bg-hover);
   border-radius: 32px;
 }
+
 .header-link:hover::after,
 .header-link:focus::after {
   content: url("../img/header-link-hover.png");
@@ -165,11 +179,13 @@ img {
   margin-left: auto;
   align-items: center;
 }
+
 .soc-list {
   display: flex;
   gap: 16px;
   position: relative;
 }
+
 .soc-list::after {
   content: "";
   position: absolute;
@@ -189,17 +205,20 @@ img {
 .hero {
   background-color: var(--bg-color);
 }
+
 .hero .container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 90px;
 }
+
 .hero-wrap {
   margin-right: 120px;
   padding-top: 140px;
   display: flex;
   flex-direction: column;
 }
+
 .hero-title {
   margin-bottom: 24px;
   font-family: "Poppins";
@@ -209,9 +228,11 @@ img {
   color: var(--title-color);
   max-width: 620px;
 }
+
 .hero-title span {
   color: var(--accent-color);
 }
+
 .hero-desk {
   margin-bottom: 34px;
   font-size: 20px;
@@ -219,10 +240,12 @@ img {
   font-weight: 400;
   color: var(--title-color);
 }
+
 .hero-list {
   display: flex;
   gap: 20px;
 }
+
 .hero-btn {
   padding: 12px 47px;
   background-color: var(--accent-color);
@@ -233,34 +256,104 @@ img {
   color: var(--btn-color);
   text-transform: uppercase;
 }
+
 .transparent-btn {
   background-color: transparent;
   color: var(--accent-color);
   padding: 12px 0;
 }
+
 .twi {
   transition: fill 300ms linear;
 }
+
 .twi:hover,
 .twi:focus {
   fill: var(--link-color);
 }
+
 .git {
   transition: fill 300ms linear;
 }
+
 .git:hover,
 .git:focus {
   fill: var(--title-color);
 }
+
 .theme-icon {
   transition: fill 300ms linear;
   fill: rgb(216, 216, 108);
 }
+
 .theme-icon:hover,
 .theme-icon:focus {
   fill: var(--logo-color);
 }
+
 /* -------------------------------------------------------------------------- */
 /* -------------------------------- Your sec -------------------------------- */
 /* code here */
 /* -------------------------------------------------------------------------- */
+
+
+.skills-icon {
+  display: flex;
+  gap: p30x;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 21px;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  background-color: #f1d637;
+  justify-content: center;
+  border: 1px black;
+  padding: 17px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(241, 214, 55),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.skills-main {
+  text-align: inside;
+}
+
+.skills-icon:hover,
+.skills-icon:focus {
+  border: 50 black;
+}
+
+.skills-title {
+  margin-top: -82px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 1.5;
+  color: var(--title-color);
+  max-width: 620px;
+  text-align: inside;
+}
+
+.skills-list {
+  display: flex;
+}
+
+.skills-main {
+  background-color: aqua;
+  border: 1px;
+  width: 400px;
+  height: 400px;
+  gap: 100px;
+  display: block;
+  gap: 100px;
+margin-top: -17px;}
+
+.skills-desk {
+  margin-top: 15px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 20x;
+  line-height: 1.5;
+  color: var(--title-color);
+  max-width: 620px;
+}
