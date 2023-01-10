@@ -1,136 +1,136 @@
 .header {
-	.container {
-		display: flex;
-		padding-top: 30px;
-		padding-bottom: 30px;
-		align-items: center;
-	}
+  .container {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+  }
 }
 .header-logo {
-	font-weight: 800;
-	font-size: 24px;
-	line-height: 1.25;
-	color: $color_1;
-	margin-right: 45px;
-	span {
-		color: $color_2;
-	}
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.25;
+  color: $black;
+  margin-right: 45px;
+  span {
+    color: $accent;
+  }
 }
 .header-dev-list {
-	display: flex;
-	gap: 24px;
-	margin-right: 124px;
-	align-items: center;
+  display: flex;
+  gap: 24px;
+  margin-right: 124px;
+  align-items: center;
 }
 .header-dev-link {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
-	color: $color_3;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $black;
 }
 .header-list {
-	display: flex;
-	gap: 30px;
-	align-items: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 .header-item {
-	position: relative;
-	&::after {
-		content: "";
-		position: absolute;
-		width: 2px;
-		height: 2px;
-		background-color: $background-color_1;
-		top: 0;
-		bottom: 0;
-		margin-top: auto;
-		margin-bottom: auto;
-		right: -15px;
-	}
-	&:last-of-type {
-		&::after {
-			display: none;
-		}
-	}
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: $accent;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: -15px;
+  }
+  &:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
 }
 .header-link {
-	&:hover {
-		.header-item {
-			&::after {
-				display: none;
-			}
-		}
-		padding: 10px 25px;
-		min-width: 96px;
-		display: block;
-		background: var(--bg-hover);
-		border-radius: 32px;
-		&::after {
-			content: url("../img/header-link-hover.png");
-			width: 16px;
-			height: 16px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			margin-top: auto;
-			margin-bottom: auto;
-			right: 0px;
-		}
-	}
-	&:focus {
-		.header-item {
-			&::after {
-				display: none;
-			}
-		}
-		padding: 10px 25px;
-		min-width: 96px;
-		display: block;
-		background: var(--bg-hover);
-		border-radius: 32px;
-		&::after {
-			content: url("../img/header-link-hover.png");
-			width: 16px;
-			height: 16px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			margin-top: auto;
-			margin-bottom: auto;
-			right: 0px;
-		}
-	}
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 1.29;
-	color: $color_2;
-	position: relative;
-	transition: all 400ms linear;
-	display: block;
-	padding: 10px 25px;
-	min-width: 96px;
+  &:hover {
+    .header-item {
+      &::after {
+        display: none;
+      }
+    }
+    padding: 10px 25px;
+    min-width: 96px;
+    display: block;
+    background: $bgHover;
+    border-radius: 32px;
+    &::after {
+      content: url("../img/header-link-hover.png");
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      right: 0px;
+    }
+  }
+  &:focus {
+    .header-item {
+      &::after {
+        display: none;
+      }
+    }
+    padding: 10px 25px;
+    min-width: 96px;
+    display: block;
+    background: $accent;
+    border-radius: 32px;
+    &::after {
+      content: url("../img/header-link-hover.png");
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      right: 0px;
+    }
+  }
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $accent;
+  position: relative;
+  transition: all 400ms linear;
+  display: block;
+  padding: 10px 25px;
+  min-width: 96px;
 }
 .icons-wrap {
-	display: flex;
-	gap: 32px;
-	margin-left: auto;
-	align-items: center;
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+  align-items: center;
 }
 .soc-list {
-	display: flex;
-	gap: 16px;
-	position: relative;
-	&::after {
-		content: "";
-		position: absolute;
-		width: 12px;
-		height: 1px;
-		background-color: $background-color_2;
-		transform: rotate(90deg);
-		top: 0;
-		bottom: 0;
-		margin-top: auto;
-		margin-bottom: auto;
-		right: -22px;
-	}
+  display: flex;
+  gap: 16px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    background-color: $accent;
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: -22px;
+  }
 }

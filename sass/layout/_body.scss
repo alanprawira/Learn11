@@ -1,366 +1,300 @@
-body {
-	font-family: $font-family_1;
+.hero {
+  background: radial-gradient(
+    46.8% 46.8% at 50% 50%,
+    rgba(255, 255, 255, 0) 77.6%,
+    rgba(255, 255, 255, 0.72) 100%
+  );
+  background-color: $fckBg;
+  position: relative;
 }
-.link {
-	text-decoration: none;
-}
-.list {
-	list-style-type: none;
-}
-p {
-	margin: 0;
-}
-h1 {
-	margin: 0;
-}
-h2 {
-	margin: 0;
-}
-h3 {
-	margin: 0;
-}
-h4 {
-	margin: 0;
-}
-h5 {
-	margin: 0;
-}
-h6 {
-	margin: 0;
-}
-ul {
-	margin: 0;
-	padding-left: 0;
-}
-button {
-	cursor: pointer;
-}
-address {
-	font-style: normal;
-}
-img {
-	display: block;
-}
-.btn {
-	border: transparent;
-}
-.container {
-	width: 1260px;
-	margin: 0 auto;
-	padding: 0 60px;
-}
-.visually-hidden {
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	margin: -1px;
-}
-&:root {
-	--accent-color: #7733ff;
-	--title-color: rgba(0, 0, 0, 0.72);
-	--btn-color: rgba(255, 255, 255, 0.92);
-	--bg-color: rgba(214, 205, 205, 0.562);
-	--logo-color: rgba(0, 0, 0, 0.92);
-	--link-color: #3378ff;
-	--bg-hover: #f6f1ff;
-	--after-bg: #c0c0c0;
-}
-
-	.hero {
-		background-color: $background-color_1;
-		position: relative;
-	}
 
 .hero {
-	.container {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 90px;
-	}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+  }
 }
 .hero-wrap {
-	margin-right: 120px;
-	padding-top: 140px;
-	display: flex;
-	flex-direction: column;
+  margin-right: 120px;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
 }
 .hero-title {
-	margin-bottom: 24px;
-	font-family: $font-family_2;
-	font-weight: 800;
-	font-size: 43px;
-	line-height: 1.5;
-	color: $color_1;
-	max-width: 620px;
-	span {
-		color: $color_2;
-	}
+  margin-bottom: 24px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 1.5;
+  color: $black;
+  max-width: 620px;
+  span {
+    color: $accent;
+  }
 }
 .hero-desk {
-	margin-bottom: 34px;
-	font-size: 20px;
-	line-height: 1.25;
-	font-weight: 400;
-	color: $color_1;
+  margin-bottom: 34px;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: $black;
 }
 .hero-list {
-	display: flex;
-	gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 .hero-btn {
-	padding: 12px 47px;
-	background-color: $background-color_2;
-	border-radius: 6px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
-	color: $color_3;
-	text-transform: uppercase;
+  padding: 12px 47px;
+  background-color: $accent;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $black;
+  text-transform: uppercase;
 }
 .transparent-btn {
-	background-color: $background-color_3;
-	color: $color_2;
-	padding: 12px 0;
+  background-color: transparent;
+  color: $black;
+  padding: 12px 0;
 }
 .twi {
-	transition: fill 300ms linear;
-	&:hover {
-		fill: var(--link-color);
-	}
-	&:focus {
-		fill: var(--link-color);
-	}
+  transition: fill 300ms linear;
+  &:hover {
+    fill: $blue;
+  }
+  &:focus {
+    fill: $blue;
+  }
 }
 .git {
-	transition: fill 300ms linear;
-	&:hover {
-		fill: var(--title-color);
-	}
-	&:focus {
-		fill: var(--title-color);
-	}
+  transition: fill 300ms linear;
+  &:hover {
+    fill: $title;
+  }
+  &:focus {
+    fill: $title;
+  }
 }
 .theme-icon {
-	transition: fill 300ms linear;
-	fill: rgb(216, 216, 108);
-	&:hover {
-		fill: var(--logo-color);
-	}
-	&:focus {
-		fill: var(--logo-color);
-	}
+  transition: fill 300ms linear;
+  fill: rgb(216, 216, 108);
+  &:hover {
+    fill: $logo;
+  }
+  &:focus {
+    fill: $logo;
+  }
 }
 .skills-list {
-	display: flex;
-	gap: 35px;
-	position: absolute;
-	margin-top: -253px;
+  display: flex;
+  gap: 35px;
+  position: absolute;
+  margin-top: -253px;
 }
 .skills-main {
-	height: 200px;
-	padding: 32px;
-	background: #ffffff;
-	border: 1px solid #f3f3f3;
-	border-radius: 16px;
-	width: 360px;
+  height: 200px;
+  padding: 32px;
+  background: $white;
+  border: 1px solid $border;
+  border-radius: 16px;
+  width: 360px;
 }
 .skills-svg-link {
-	display: block;
-	border-radius: 50%;
-	width: 54px;
-	height: 54px;
-	display: block;
-	align-items: center;
-	justify-content: center;
-	padding: 18px;
-	background-color: $background-color_4;
-	margin-bottom: 17px;
+  display: block;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background-color: $purple;
+  margin-bottom: 17px;
 }
 .heart-link {
-	background-color: $background-color_5;
+  background-color: $pink;
 }
 .thunder-link {
-	background-color: $background-color_6;
+  background-color: $lightBlue;
 }
 .skills-icon {
-	fill: #ffffff;
+  fill: $white;
 }
 .star {
-	fill: #ffff00;
+  fill: $yellow;
 }
 .thunder {
-	fill: #5096ff;
+  fill: $soLightBlue;
 }
 .skills-link {
-	margin-bottom: 5px;
-	font-size: 18px;
-	line-height: 1.28;
-	color: $color_4;
-	font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.28;
+  color: $black;
+  font-weight: 700;
 }
 .skills-desk {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.29;
-	color: $color_5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $black;
 }
 .beauty-wrap {
-	margin-top: 200px;
-	margin-bottom: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .beauty {
-	font-style: italic;
-	font-weight: 400;
-	font-size: 48px;
-	line-height: 60px;
-	color: $color_6;
-	span {
-		font-weight: 800;
-	}
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: $black;
+  span {
+    font-weight: 800;
+  }
 }
 .beauty-1 {
-	position: relative;
-	&::before {
-		content: url("../img/beauty.png");
-		position: absolute;
-		left: -146px;
-	}
+  position: relative;
+  &::before {
+    content: url("../img/beauty.png");
+    position: absolute;
+    left: -146px;
+  }
 }
 .beauty-2 {
-	position: relative;
-	padding-left: 340px;
-	&::before {
-		content: "";
-		position: absolute;
-		width: 86px;
-		height: 4px;
-		background-color: $background-color_7;
-		top: 0;
-		bottom: 0px;
-		margin-top: auto;
-		margin-bottom: auto;
-		left: 230px;
-	}
-	&::after {
-		content: "";
-		position: absolute;
-		width: 46px;
-		height: 4px;
-		top: 0;
-		bottom: 0px;
-		margin-top: auto;
-		margin-bottom: auto;
-		background-color: $background-color_7;
-		right: -60px;
-	}
+  position: relative;
+  padding-left: 340px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 4px;
+    background-color: $beautyBg;
+    top: 0;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 230px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 4px;
+    top: 0;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: $beautyBg;
+    right: -60px;
+  }
 }
 .clean-title {
-	margin-top: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .clean-hero {
-	font-weight: 800;
-	font-size: 16px;
-	line-height: 1.25;
-	color: $color_7;
-	margin-left: -883px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $accent;
+  margin-left: -883px;
 }
 .clean-main {
-	font-weight: 800;
-	font-size: 32px;
-	line-height: 1.25;
-	margin-top: 12px;
-	margin-left: -535px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-top: 12px;
+  margin-left: -535px;
 }
 .clean-desk {
-	font-weight: 400;
-	font-size: 16x;
-	line-height: 1.5;
-	margin-top: 16px;
-	margin-left: -610px;
+  font-weight: 400;
+  font-size: 16x;
+  line-height: 1.5;
+  margin-top: 16px;
+  margin-left: -610px;
 }
 .quality-title {
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: -566px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -566px;
 }
 .quality-main {
-	display: flex;
-	gap: 35;
-	flex-direction: column;
-	padding: 32px;
-	background: #FFFFFF;
-	border: 1px solid #b9b0b0;
-	border-radius: 16px;
-	width: 482px;
-	height: 126px;
-	position: relative;
-	margin-top: 20px;
+  display: flex;
+  gap: 35;
+  flex-direction: column;
+  padding: 32px;
+  background: $white;
+  border: 3px solid $purple;
+  border-radius: 24px;
+  width: 482px;
+  height: 126px;
+  position: relative;
+  margin-top: 20px;
 }
 .quality-high {
-	font-size: 16px;
-	line-height: height 1.25;
-	font-weight: 700;
-	color: $color_7;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: $accent;
 }
 .quality-desk {
-	font-size: 14px;
-	font-weight: 400;
-	margin-top: 7.93px;
-	margin-bottom: 10px;
-	position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 7.93px;
+  margin-bottom: 10px;
+  position: relative;
 }
 .sec-4 {
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: -566px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -566px;
 }
 .det-title {
-	margin-left: -340px;
-	margin-top: 10px;
-	font-size: 18px;
-	color: $color_8;
-	font-weight: 700;
+  margin-left: -340px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: $pink;
+  font-weight: 700;
 }
 .det-main {
-	margin-left: 190px;
-	margin-top: 10px;
-	font-size: 32px;
-	font-weight: 800;
+  margin-left: 190px;
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 800;
 }
 .det-desk {
-	margin-left: 43px;
-	margin-top: 10px;
-	font-size: 18px;
-	font-weight: 16px;
+  margin-left: 43px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 16px;
 }
 .det-extra {
-	display: flex;
-	flex-direction: row;
-	color: $color_7;
-	margin-left: 10px;
-	margin-top: 10px;
-	font-size: 18px;
-	font-weight: 16px;
-	font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  color: $accent;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 16px;
+  font-weight: 700;
 }
 .det-extra-list {
-	display: flex;
-	flex-direction: row;
-	margin-left: -190px;
+  display: flex;
+  flex-direction: row;
+  margin-left: -190px;
+}
+.holder {
+  background-color: $bgColorSecond;
 }
